@@ -5,8 +5,6 @@
 
 using namespace std;
 
-/* https://walkccc.me/LeetCode/problems/1773/ */
-
 int countMatches(vector<vector<string>>& items, string ruleKey,
                 string ruleValue) {
     const int index = ruleKey == "type" ? 0 : ruleKey == "color" ? 1 : 2;
@@ -22,6 +20,3 @@ int main() {
 
     return 0;
 }
-
-
-
