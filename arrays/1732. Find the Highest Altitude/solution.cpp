@@ -12,7 +12,6 @@ int largestAltitude(vector<int>& gain) {
         if (gain[i] > maxaltitude) {
             maxaltitude = gain[i];
         }
-        
     }
 
     return maxaltitude;    
