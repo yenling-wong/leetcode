@@ -4,8 +4,7 @@
 using namespace std;
 
 int countConsistentStrings(string allowed, vector<string>& words) {
-    
-    
+    // Pending, still haven't figured out
     return;
 }
 
