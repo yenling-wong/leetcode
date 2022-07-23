@@ -1,9 +1,6 @@
 #include <iostream>
 #include <vector>
 
-/* https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/discuss/2210630/C%2B%2B-4-METHODS-FAST-EASY*/
-/* space optimized solution */
-
 using namespace std;
 
 bool arrayStringsAreEqual(vector<string>& word1, vector<string>& word2) {
