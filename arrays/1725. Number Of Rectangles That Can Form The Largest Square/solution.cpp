@@ -11,8 +11,7 @@ int countGoodRectangles(vector<vector<int>>& rectangles) {
         int minimum = min(rectangles[i][0], rectangles[i][1]);
         m[minimum]++;
     }
-    
-
+   
     return m.rbegin()->second;
 }
 
