@@ -20,7 +20,6 @@ int oddCells(int m, int n, vector<vector<int>>& indices) {
             if ((row[i] + column[j]) % 2 == 1) {
                 count++;
             }
-                
         }
     }
     
