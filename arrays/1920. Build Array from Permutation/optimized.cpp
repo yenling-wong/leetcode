@@ -16,6 +16,8 @@ vector<int> buildArray(vector<int>& nums, int n) {
     return nums;
         
 }
+/* We know that (a + b * n) / n = b and (a + b * n) % n = a . In this context, we let a = nums[i] and b = nums[nums[i]]. In the first iteration, you add b * n to a. 
+Since the number might have been modified to nums[nums[i]], we apply the % operation to obtain the original nums[i]. 
 
 void printVector(vector<int>& ans) {
     for (size_t i = 0; i < ans.size(); i++) {
@@ -32,6 +34,3 @@ int main() {
 
     return 0;
 }
-
-
-
