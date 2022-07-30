@@ -14,6 +14,7 @@ vector<int> buildArray(vector<int>& nums) {
     return ans;
         
 }
+/* Solution Explanation: Create a new vector. For each iteration, add nums[nums[i]] to the vector. */
 
 void printVector(vector<int>& ans) {
     for (size_t i = 0; i < ans.size(); i++) {
@@ -30,6 +31,5 @@ int main() {
     return 0;
 }
 
-/* Solution Explanation: Create a new vector. For each iteration, add nums[nums[i]] to the vector. */
 /* Time Complexity: O(n), since we run through each value in the array exactly once. */
 /* Space Complexity: O(n), since we create a new vector of exactly n elements. This can be improved by modifying the elements in-situ. See optimized version. */
