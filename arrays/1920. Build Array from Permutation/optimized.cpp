@@ -23,6 +23,8 @@ void printVector(vector<int>& ans) {
     }
 }
 
+/* Helper function for printing. */
+
 int main() {
     vector<int> nums = {0, 2, 1, 5, 3, 4};
     buildArray(nums, sizeof(nums)/sizeof(nums[0]));
