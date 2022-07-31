@@ -38,5 +38,5 @@ int main() {
 
     return 0;
 }
-// Time Complexity: O(n * m + indices.length), since we iterate through the length of the indices array, as well as m columns * n rows of the two maps.
+// Time Complexity: O(n * m + indices.length), since we iterate through the length of the indices array, as well as m rows * n columns of the two maps.
 // Space Complexity: O(n + m), extra space is used in the form of two maps to store m and n values respectively.
