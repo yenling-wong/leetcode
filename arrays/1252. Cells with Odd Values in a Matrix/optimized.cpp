@@ -1,19 +1,19 @@
 #include <iostream>
 #include <vector>
-#include <map>
+#include <unordered_map>
 
 using namespace std;
 
 int oddCells(int m, int n, vector<vector<int>>& indices) {
-    map<int, int> row;
-    map<int, int> column;
+    unordered_map<int, int> row;
+    unordered_map<int, int> column;
+    
     int count = 0;
     
     for (size_t i = 0; i < indices.size(); i++) {
         row[indices[i][0]]++;
         column[indices[i][1]]++;
     }
-
     
     for (int i = 0; i < m; i++){
         for (int j = 0; j < n; j++) {
@@ -22,7 +22,7 @@ int oddCells(int m, int n, vector<vector<int>>& indices) {
             }
         }
     }
-    
+   
     return count;
     
 }
@@ -34,3 +34,5 @@ int main() {
 
     return 0;
 }
+// Time Complexity: O(n * m + indices.length), since we iterate through the length of the indices array, as well as m columns * n rows of the two maps.
+// Space Complexity: O(n + m), extra space is used in the form of two maps to store m and n values respectively.
