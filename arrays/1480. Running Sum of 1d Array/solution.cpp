@@ -18,7 +18,6 @@ void printVector(vector<int>& ans) {
         cout << ans[i] << " ";
     }
 }
-
 // Helper Function to Print Resulting Vector
 
 int main() {
