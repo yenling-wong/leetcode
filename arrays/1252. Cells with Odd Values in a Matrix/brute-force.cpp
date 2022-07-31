@@ -43,3 +43,6 @@ int main() {
 
     return 0;
 }
+// Time Complexity: O(indices.length * (m + n) + m * n), because for every element in indices, we iterate through one row and one column, and after that
+// we traverse the new matrix of m * n length.
+// Space Complexity: O(m * n), because we create a new matrix of m * n.
