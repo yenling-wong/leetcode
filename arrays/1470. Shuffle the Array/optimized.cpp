@@ -48,3 +48,5 @@ int main() {
     printVector(nums);
     return 0;
 }
+
+// Time Complexity: O(n), 
