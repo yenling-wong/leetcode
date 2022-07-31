@@ -24,8 +24,12 @@ int oddCells(int m, int n, vector<vector<int>>& indices) {
     }
    
     return count;
-    
 }
+
+/* Create two maps, one to store the row operations and the other to store the column operations. Create a new integer value to store the
+number of odd elements. Iterate through the indices array. Increment the respective row and column indicated in the indices. This represents the frequency
+a row or column has been incremented. Finally, iterate through every possible combination of row and column using two for loops. If the combined number of 
+operations performed on that element is an odd number the element is odd and we increment count by 1 */
 
 int main() {
     vector<vector<int>> indices = {{0, 1}, {1, 1}};
