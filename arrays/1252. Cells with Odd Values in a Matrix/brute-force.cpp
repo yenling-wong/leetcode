@@ -7,16 +7,22 @@ int oddCells(int m, int n, vector<vector<int>>& indices) {
     int count = 0;
     
     vector<vector<int>> matrix (m, vector<int> (n, 0));
+    // Initialize an m * n matrix to zero values.
     
     for (size_t i = 0; i < indices.size(); i++) {
+        // Iterate through the indices array to obtain the targeted row and column.
         int row = indices[i][0];
         int column = indices[i][1];
+        
         for (int j = 0; j < n; j++) {
             matrix[row][j] += 1;
         }
+        // Increment all the values of the row.
+        
         for (int k = 0; k < m; k++) {
             matrix[k][column] += 1;
         }
+        // Increment all the values of the column.
     }
     
     for (int i = 0; i < m; i++) {
@@ -26,8 +32,8 @@ int oddCells(int m, int n, vector<vector<int>>& indices) {
             }
         }
     }
+    // Iterate through the whole matrix to count the number of odd values.
     return count;
-    
 }
 
 int main() {
