@@ -12,6 +12,8 @@ vector<int> getConcatenation(vector<int>& nums) {
     return nums;
 }
 
+/* Since the array already contains the first half of resulting elements, we simply have to push the new elements onto the same array. */
+
 void printVector(vector<int>& nums) {
     for (size_t i = 0; i < nums.size(); i++) {
         cout << nums[i] << " ";
@@ -24,3 +26,6 @@ int main() {
     printVector(nums);
     return 0;
 }
+
+// Time Complexity: O(n), we iterate through the nums array once.
+// Space Complexity: O(n), we use an additional n spaces to store the new elements.
