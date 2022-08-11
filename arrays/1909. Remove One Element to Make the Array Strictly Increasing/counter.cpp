@@ -13,7 +13,7 @@ bool canBeIncreasing(vector<int>& nums) {
             }
             count++;
 
-            if (i > 0 && nums[i] <= nums[i - 2]) {
+            if (i > 1 && nums[i] <= nums[i - 2]) {
                 nums[i] = nums[i - 1];
             }
         }
