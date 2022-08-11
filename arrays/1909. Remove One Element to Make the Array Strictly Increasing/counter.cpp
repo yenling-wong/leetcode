@@ -21,6 +21,11 @@ bool canBeIncreasing(vector<int>& nums) {
 
     return true;
 }
+/* We keep a counter to track the number of elements that are not strictly greater than the element
+to their left. On line 16, we replace the element with its previous element if it is still smaller 
+than the element two spaces before it. This is equivalent to removing that element, and ensuring that
+the following element is not compared to that value, but the value before it. Without this mechanism 
+in place, the array {6, 7, 2, 3, 9} will pass. */
 
 int main() {
     vector<int> nums = {6, 7, 2, 8, 9};
@@ -28,3 +33,5 @@ int main() {
     
     return 0;
 }
+// Time Complexity: O(n), we traverse the array once.
+// Space Complexity: O(1), no additional space required.
