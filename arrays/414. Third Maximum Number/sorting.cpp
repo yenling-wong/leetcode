@@ -13,12 +13,10 @@ int thirdMax(vector<int>& nums) {
             last = nums[i];
             count++;
         }
-
         if (count == 3) {
             return nums[i];
         }
-    }
-    
+    }  
     return nums.back();      
 }
 
