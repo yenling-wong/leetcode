@@ -43,5 +43,8 @@ int main() {
     return 0;
 }
 
-// Time Complexity: O(n log 3) = O(n)
-// Space Complexity : O(log 3) = O(1)
+// Time Complexity: O(n log 3) = O(n), because inserting and removing elements in a priority queue is bounded by log n. Since there
+// can only be 3 elements at a time in the queue, the time complexity of those operations is log 3. We do this for n times (the number 
+// of elements in the array.
+// Space Complexity : O(3) = O(1), because the space complexity of a priority queue is upper bounded by O(n) where n is the number of 
+// elements in the queue.
