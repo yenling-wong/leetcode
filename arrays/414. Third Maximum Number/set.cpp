@@ -20,10 +20,15 @@ int thirdMax(vector<int>& nums) {
         }
     }
 
-    auto itr = st.rbegin();
+    it = st.rbegin();
 
     return *itr;
 }
+
+/* We use a set to store all distinct elements. We then use a reverse iterator to traverse the array
+starting from the back, as sets are sorted. We increment the counter for each element in the set until
+we reach the third largest element and return the value. Otherwise if the set contains only two elements
+we point the iterator to the last element again and return that value. */
 
 int main() {
     vector<int> nums = {2, 2, 3, 1};
