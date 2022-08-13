@@ -40,7 +40,7 @@ bool validMountainArray(vector<int>& arr) {
 /* We traverse the array to get the index of the maximum element (peak) in the array. We then check if the peak is at the last
 element or the first, and return false if that is the case. Otherwise, we check if the elements increase strictly leading
 up to the peak element. and then from there we check if it decreases strictly. This was the first solution that came to mind,
-could write more elegant and efficient code. :/*/
+could write more elegant and efficient code to only scan the array once. :/*/
 
 int main() {
     vector<int> arr = {0, 2, 3, 4, 5, 2, 1, 0};
