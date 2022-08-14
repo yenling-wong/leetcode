@@ -28,7 +28,7 @@ bool checkIfExist(vector<int>& arr) {
 /*We maintain a hash table of the frequency of each element. Though the frequency here doesn't matter, we
 are checking if the twice and half elements already exist. We only need one occurence to return true. It is important
 to note here that we need to check for both the twice and half values of each element, since those target values
-might appear at a later time.*/
+might appear at a later time. Alternatively, we could also use a set.*/
 
 int main() {
     vector<int> arr = {7, 1, 14, 11};
