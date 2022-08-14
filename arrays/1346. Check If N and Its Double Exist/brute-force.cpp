@@ -18,6 +18,8 @@ bool checkIfExist(vector<int>& arr) {
     return false;
 }
 
+/*This is technically a two pointer solution. */
+
 int main() {
     vector<int> arr = {7, 1, 14, 11};
 
